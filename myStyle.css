@@ -1,0 +1,207 @@
+﻿/* =========================================
+  עיצוב כללי (Global Styles)
+========================================= */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* צבע רקע עדין */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* ממרכז את כל האתר במסך */
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* צל עדין למסגרת האתר */
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* =========================================
+  כותרת עליונה ותפריט (Header & Nav)
+========================================= */
+header {
+    text-align: center; /* ממרכז את הלוגו, הכותרת והתפריט */
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+}
+
+/* עיצוב הלוגו במידה ואין תמונה */
+header img.logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none; /* מעלים את הנקודות השחורות */
+    padding: 0;
+    margin: 0;
+    display: flex; /* מסדר את הפריטים בשורה */
+    justify-content: center; /* ממרכז את הרשימה */
+    gap: 20px; /* מרווח בין הפריטים בתפריט */
+    flex-wrap: wrap; /* מאפשר שבירת שורה במסכים קטנים */
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e2eafc; /* רקע עדין במעבר עכבר */
+}
+
+/* =========================================
+  אזור הפתיח (Intro Section)
+========================================= */
+.intro-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fdfbf7; /* רקע שונה מעט כדי להבליט את הפתיח */
+    margin-bottom: 30px;
+}
+
+.intro-section h2 {
+    font-size: 2.2em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: #555;
+}
+
+.intro-section h3 {
+    font-size: 1.5em;
+    color: #e67e22; /* צבע מדגיש לשאלה "במה תרצו להתמקד?" */
+}
+
+/* =========================================
+  תפריט ויזואלי - הכרטיסיות (Visual Menu)
+========================================= */
+.visual-menu {
+    display: flex; /* מסדר את הכרטיסיות בשורה אופקית */
+    justify-content: center; /* ממרכז את כל הכרטיסיות */
+    gap: 30px; /* מרווח גדול בין הכרטיסיות */
+    padding: 0 20px 40px 20px;
+    flex-wrap: wrap; /* גורם לכרטיסיות לרדת שורה אם המסך קטן מדי */
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 250px; /* רוחב קבוע לכל כרטיסייה */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* צל עדין לכרטיסייה */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* אפקט ריחוף (Hover) כשמעבירים את העכבר על הכרטיסייה */
+.menu-item:hover {
+    transform: translateY(-5px); /* מרים את הכרטיסייה מעט למעלה */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1); /* מגדיל את הצל */
+}
+
+/* עיצוב זמני לתמונות עד שתוסיפו קבצים אמיתיים */
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    background-color: #eee; /* רקע אפור שמסמן מקום לתמונה */
+    border-radius: 50%; /* הופך את הרקע לעיגול */
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.menu-item h4 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+/* עיצוב כפתורי המעבר (action-btn) */
+.action-btn {
+    display: inline-block;
+    background-color: #4CAF50; /* ירוק עדין */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px; /* קצוות מעוגלים */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* =========================================
+  חלק תחתון (Footer)
+========================================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+/* =========================================
+  עיצוב אזור הזיגזג 
+========================================= */
+.zigzag-row {
+    display: inline-block; /* עוטף את האלמנטים שצפים בתוכו */
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* הריבועים הלבנים */
+.white-box {
+    background-color: #ffffff;
+    width: 45%;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px; /* קצוות מעוגלים עדינים */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* התמונות שלצד הריבועים */
+.side-img {
+    width: 45%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* מחלקות הציפה (Float) שיוצרות את הזיגזג */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
